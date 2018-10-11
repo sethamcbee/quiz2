@@ -1,9 +1,9 @@
-//********************
-//Matthew Aberegg
-//Project 3
-//CS 2401
-//10/8/2015
-//********************
+/**
+ * @file college.cc
+ * @author Matthew Aberegg
+ * @date 10/8/2015
+ */
+ 
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -18,6 +18,7 @@ College::College(std::string s){
 
 
 College::~College(){
+	/// Used to iterate over the list and delete all nodes.
 	node * rmptr;
 	while(head != NULL){
 		rmptr = head;

@@ -1,3 +1,9 @@
+/**
+ * @file tarray.h
+ * @author John Dolan
+ * @date Fall 2014
+ */
+
 /*********************************************************************
 	This is a class to introduce you to the syntax of working with 
 	template classes. Notice that the type being stored is completely
@@ -10,6 +16,7 @@
 
 #include<iostream>
 
+/// Generic class that defines a dynamically-sized array (vector).
 template<class T>
 class Tarray{
     public:
@@ -38,6 +45,9 @@ class Tarray{
 	// removes the item at the current index spot
 	void remove_current();
     private:
+    /**
+     * @brief Reallocates the array buffer size to allow the array
+     * to grow as needed. */
 	void resize();
 	T *data; // pointer to the dynamic array
 	std::size_t capacity;

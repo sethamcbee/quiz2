@@ -1,3 +1,9 @@
+/**
+ * @file collegemain.cc
+ * @author John Dolan
+ * @date Spring 2015
+ */
+
 /******************************************************
 	This is the main for Project 3, which asks you to 
     build a container that holds a list of college courses.
@@ -21,10 +27,14 @@
 
 using namespace std;
 
-// This function displays the menu and returns the user's choice
+/**
+ * @brief Display the menu and return the user's choice.
+ * @return The character entered by the user.
+ */
 int menu();
 
 int main(){
+	/// Current user choice.
     int choice;
     course c;
     string coursename;

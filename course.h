@@ -1,3 +1,11 @@
+/**
+ * @file course.h
+ * @author John Dolan
+ * @date Summer 2013
+ * @brief Defines the course class, which stores information
+ * about a student's completed college course.
+ */
+
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
@@ -12,6 +20,7 @@
 #ifndef COURSE_H
 #define COURSE_H
 
+/// Stores information about a single course.
 class course{
     public:
 	course();
@@ -43,7 +52,9 @@ class course{
     private:
 	void upper_course();
 	std::string course_number;
+	/// Grade recieved in the course.
 	std::string grade;
+	/// Number of credit hours that this course qualified as.
 	double hours;
 };
 

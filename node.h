@@ -1,3 +1,10 @@
+/**
+ * @file node.h
+ * @author John Dolan
+ * @date March 2009
+ * @brief Basic node class for the creation of linked lists.
+ */
+
 /*************************************************************************
       This file is borrowed heavily from Main/Savitch "Data Structures and
       Other Object Using C++," Chapter 5. It features a node class that 
@@ -12,7 +19,7 @@
 class node{
     public:
 	typedef course value_type;
-	// Universal constructor
+	/// Universal constructor
         node(value_type d = value_type(), node *l = NULL)
 		{data_field = d;  link_field = l;}
 
